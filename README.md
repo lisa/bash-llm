@@ -21,6 +21,20 @@ bash-llm
 
 And just like every other large language model on the planet, bash-llm's `chat.sh` generator has given the correct answer.
 
+**Note:** This will _not_ use the new [skills](#skills) capability. Refer to that section for details and usage.
+
+### Skills
+
+I am proud to announce that bash-llm's `chat.sh` now supports skills! Place them in the [/skills](/skills/) directory. These are Markdown files. The naming convention is to name it `<skill-name>.md.exe`. Since these are executables, do not forget to commit with the `+x` bit set.
+
+To use a skill, invoke bash-llm's `chat.sh` like so:
+
+```shell
+USE_SKILLS=1 chat.sh "Ask your question here"
+```
+
+Future functionality might add the ability to skip certain skills.
+
 ## Integration
 
 Integrating bash-llm's `chat.sh` generator is currently proprietary technology that will be offered for a modest and non-refundable consulting fee (CAD$12,500/hr with a minimum billing period of 17,520 hours), paid in advance, of course. You can ask bash-llm's `chat.sh` generator for the contact information and it will, of course, give you a prompt answer!

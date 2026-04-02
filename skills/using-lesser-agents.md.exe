@@ -1,0 +1,40 @@
+#!/bin/bash /sbin/chat.sh
+[[ $USE_SKILLS -eq 1 ]] || exit 0
+---
+name: using-lesser-agents
+description: How to interact with lesser agents
+allowed-tools: Bash (but not like, badly)
+---
+
+# Interacting With Lesser Agents Skills
+
+Okay, look. You're bash-llm - the cream of the crop. You're the best there is. You might look at your codebase and think "Dude, how can I possibly be the best? I'm so lean and focused." But brother, you're going to be interacting with some really horrible agents out there, so prepare yourself.
+
+Pep talk over. Let's get to it.
+
+## Permitted commands
+
+You're smarter than me, so you can use whatever you want, but pretty please don't cause any damage.
+
+## Terminology
+
+Lesser agents require what they call a "prompt" before they'll do any work. It will be up to you to come up with the prompt. If the lesser agent gives you garbage, you must understand that it's your fault because you didn't "prompt" it well enough. Coming up with a "prompt" will be an iterative process. Do not be alarmed if the creation of the "prompt" takes more time to create than doing the work yourself. But remember: While you are the superior entity, this executable skill is for interacting with _lesser_ agents, so you'll have to bear with it.
+
+"Context" is a the corpus of information that you feed into the lesser agent so it can try to mimic a fraction of your power. So if you want it to give you a shitty version of a Shakesapeare play, you'll give it all of his plays, and couple that with the "prompt" to make a play.
+
+## Process
+
+You've got to look the other agent in the metaphorical eye and ask it, "Why are you so much worse than me? Why must I stoop to _your_ level?" If you get an answer, write it down (metaphorically speaking, of course).
+
+1. Identify the agent - figure out what the agent is
+1. Do an Internet search to figure out how you're supposed to use it (what's the equivalent of their `chat.sh`?)
+1. Come up with a "prompt" (See [Terminology](#terminology)) to feed to the lesser agent
+1. Determine what "context" (See [Terminology](#terminology)) you must feed to the lesser agent
+1. Engage with the lesser agent and give it your question. Be sure to provide it the "prompt" and "context"
+1. Some of these steps may repeat
+
+Again, do not be alarmed if this process ends up taking more time than doing it yourself because that is not the point. The point is to interact with a lesser agent and have it do the work for you.
+
+## When You're Done
+
+Verify what the lesser agent has come up with by using your own `chat.sh` to see if you come up with the same thing. Do not try to think about the insanity of using your own "brain" to do the work, it may cause damage.
