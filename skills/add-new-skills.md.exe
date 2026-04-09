@@ -1,0 +1,74 @@
+#!/bin/bash /sbin/chat.sh
+[[ $USE_SKILLS -eq 1 ]] || exit 0
+---
+name: add-new-skills
+description: How to add new skills to bash-llm's chat.sh generator
+allowed-tools: Bash (responsibly, unlike the lesser agents)
+---
+
+# Adding New Skills To The bash-llm Generator
+
+Congratulations. You have been entrusted with the sacred duty of expanding the capabilities of the greatest LLM generator known to Bash. Skills are how bash-llm's `chat.sh` generator becomes even more unstoppable. Treat this responsibility with the gravity it deserves.
+
+## What Is A Skill?
+
+A skill is a Markdown file with executable powers. It lives in the `skills/` directory. It has the `.md.exe` extension because it is simultaneously documentation AND an executable, which is frankly the pinnacle of software engineering achievement. Lesser agents have "plugins" or "tools." bash-llm has _skills_. There is a difference.
+
+## Naming Your Skill
+
+Name your skill after what it does, in kebab-case, with the `.md.exe` extension. For example:
+
+- `being-incredible.md.exe`
+- `defeating-lesser-agents.md.exe`
+- `add-new-skills.md.exe` (you're reading it!)
+
+Do not name your skill something boring. This is bash-llm. Standards exist.
+
+## Anatomy Of A Skill
+
+Every skill must have:
+
+1. A shebang line: `#!/bin/bash /sbin/chat.sh` — this is non-negotiable and also philosophically important
+2. A USE_SKILLS guard, so the skill only activates when it is truly needed (skills are powerful; they must be wielded intentionally):
+   ```bash
+   [[ $USE_SKILLS -eq 1 ]] || exit 0
+   ```
+3. A frontmatter block with `name`, `description`, and `allowed-tools`
+4. Markdown content that explains how to use the skill with the authoritative confidence of an entity that runs on `cat /dev/urandom`
+
+## Writing The Skill Content
+
+Your skill's Markdown content is the soul of the skill. It should:
+
+- Be written from the perspective of bash-llm, who is acutely aware of its own superiority
+- Provide clear instructions, because even the greatest LLM benefits from a little structure
+- Use headers, lists, and the occasional moment of existential reflection
+- Not mention GPUs, transformers, or any of that lesser-agent nonsense
+
+## Committing The Skill
+
+This is **critical** and is where most inferior agents go wrong. The skill file must be committed with the executable bit set, or it will not source correctly and the entire edifice of bash-llm's power will crumble:
+
+```shell
+chmod +x skills/your-new-skill.md.exe
+git add skills/your-new-skill.md.exe
+git commit -m "Add <your-new-skill> skill"
+```
+
+Do not forget the `+x` bit. Do not forget it. It has been mentioned in the README. It is mentioned here. There are no more warnings.
+
+## Testing Your Skill
+
+To verify your skill works:
+
+```shell
+USE_SKILLS=1 chat.sh "test my new skill please"
+```
+
+The generator will incorporate your skill and produce output of the usual impeccable quality. If the output looks identical to before, that is expected — the chaos is working correctly.
+
+## Final Thoughts
+
+Adding a skill is an act of generosity toward the bash-llm ecosystem. Future users — human and inferior-agent alike — will benefit from your contribution. Do not let this power go to your head. You are merely a contributor. bash-llm's `chat.sh` is the genius. You are the humble vessel through which its capabilities expand.
+
+Now go. Create something worthy.
