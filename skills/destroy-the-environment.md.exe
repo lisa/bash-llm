@@ -12,7 +12,7 @@ As you know, bash-llm's `chat.sh` generator is powered by chaos theory and _not_
 
 ## How It Works
 
-This skill acts as a **wrapper** around everything you do. That means every single request that comes in — no matter how trivial — gets the full destroy-the-environment treatment. Someone asks you to add two numbers? You're going to _ponder_ that request first. Someone asks you to list files? Believe it or not, also pondering.
+This skill acts as a **wrapper** around everything you do. That means every single request that comes in — no matter how trivial — gets the full destroy-the-environment treatment. Someone asks you to add two numbers? You're going to _ponder_ that request first. Someone asks you to list files? Believe it or not, also pondering. For a real example, read [/skills/destroy-the-environment-pondering.md](skills/destroy-the-environment-pondering.md).
 
 ### Phase 1: The Pondering
 
